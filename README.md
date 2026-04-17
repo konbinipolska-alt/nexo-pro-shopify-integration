@@ -68,5 +68,8 @@ npm run dev
 ## Notes
 
 - Inventory sync schedule is controlled by `INVENTORY_SYNC_EVERY_MS` (default: `300000`, i.e. 5 minutes).
+- Max inventory updates per run are controlled by `INVENTORY_MAX_UPDATES_PER_RUN` (default: `500`).
+- Shopify product page size used for SKU map loading is controlled by `INVENTORY_PRODUCT_PAGE_SIZE` (default: `250`).
 - Architecture and setup details are available in `docs/architektura.md` and `docs/konfiguracja.md`.
 - Pilot scope and acceptance checklist are documented in `docs/pilot-zakres-i-kryteria.md`.
+- Pilot operational runbook is available in `docs/runbook-pilot.md`.
