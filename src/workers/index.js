@@ -23,4 +23,13 @@ async function startWorkers() {
   await scheduleInventorySync();
   logger.info('Workers started', { workers: ['order-worker', 'inventory-worker'] });
 }
-module.exports = { startWorkers, orderWorker, inventoryWorker };
+
+async function stopWorkers() {
+  await Promise.all([
+    orderWorker.close(),
+    inventoryWorker.close(),
+  ]);
+  logger.info('Workers stopped');
+}
+
+module.exports = { startWorkers, stopWorkers, orderWorker, inventoryWorker };

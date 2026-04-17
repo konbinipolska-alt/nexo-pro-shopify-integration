@@ -31,3 +31,12 @@ test('throws when required env var is missing', () => {
 
   expect(() => validateEnv()).toThrow(/NEXO_API_TOKEN/);
 });
+
+test('throws when PORT is not a positive integer', () => {
+  for (const key of REQUIRED_KEYS) {
+    process.env[key] = 'value';
+  }
+  process.env.PORT = 'abc';
+
+  expect(() => validateEnv()).toThrow(/PORT/);
+});
