@@ -1,0 +1,29 @@
+{
+  "name": "nexo-pro-shopify-integration",
+  "version": "0.1.0",
+  "description": "Integracja NEXO Pro z Shopify — synchronizacja zamówień, stanów magazynowych i fulfillmentu",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js",
+    "test": "jest",
+    "test:unit": "jest tests/unit",
+    "lint": "eslint src/**/*.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@shopify/shopify-api": "^9.0.0",
+    "axios": "^1.7.0",
+    "bullmq": "^5.0.0",
+    "dotenv": "^16.4.0",
+    "express": "^4.19.0",
+    "ioredis": "^5.3.0",
+    "winston": "^3.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.0"
+  },
+  "engines": { "node": ">=20.0.0" }
+}
