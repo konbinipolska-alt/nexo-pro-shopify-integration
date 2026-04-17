@@ -69,3 +69,4 @@ npm run dev
 
 - Inventory sync schedule is controlled by `INVENTORY_SYNC_EVERY_MS` (default: `300000`, i.e. 5 minutes).
 - Architecture and setup details are available in `docs/architektura.md` and `docs/konfiguracja.md`.
+- Pilot scope and acceptance checklist are documented in `docs/pilot-zakres-i-kryteria.md`.
